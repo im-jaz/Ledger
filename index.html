@@ -48,6 +48,49 @@
         </article>
 
     </section>
+
+    <section class="form-card">
+
+        <h3>Add Expense</h3>
+
+        <form id="expenseForm">
+
+            <input
+                type="text"
+                id="description"
+                placeholder="Description"
+                required
+            >
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Amount"
+                step="0.01"
+                required
+            >
+
+            <select id="currency">
+                <option>KES</option>
+                <option>EUR</option>
+                <option>GBP</option>
+                <option></option>
+            </select>
+
+            <select id="category">
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Shopping</option>
+                <option>Utilities</option>
+            </select>
+
+            <button type="submit">
+                Add Expense
+            </button>
+
+        </form>
+
+    </section>
     
 </body>
 </html>
