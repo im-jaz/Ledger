@@ -24,67 +24,36 @@
     </div>
   </header>
 
-    <section class="stats">
 
-        <article class="stat-card">
-            <span>Total Spending</span>
-            <h2 id="totalAmount">0.00</h2>
-        </article>
-
-        <article class="stat-card">
-            <span>Home Currency</span>
-            <h2 id="currencyDisplay">KES</h2>
-        </article>
-
-        <article class="stat-card">
-            <span>Expenses</span>
-            <h2 id="expenseCount">0</h2>
-        </article>
-
+  <main class="wrap">
+    <section class="summary" aria-live="polite">
+      <p class="totalbig">Total spent</p>
+      <p class="total" id="total">—</p>
+      <p class="status" id="status">Loading exchange rates…</p>
     </section>
 
-    <section class="form-card">
-
-        <h3>Add Expense</h3>
-
-        <form id="expenseForm">
-
-            <input
-                type="text"
-                id="description"
-                placeholder="Description"
-                required
-            >
-
-            <input
-                type="number"
-                id="amount"
-                placeholder="Amount"
-                step="0.01"
-                required
-            >
-
-            <select id="currency">
-                <option>KES</option>
-                <option>EUR</option>
-                <option>GBP</option>
-                <option></option>
-            </select>
-
-            <select id="category">
-                <option>Food</option>
-                <option>Transport</option>
-                <option>Shopping</option>
-                <option>Utilities</option>
-            </select>
-
-            <button type="submit">
-                Add Expense
-            </button>
-
+    <div class="grid">
+      <section class="card" aria-labelledby="add-title">
+        <h2 id="add-title">Add an expense</h2>
+        <form id="expense-form" novalidate>
+          <label>Description
+            <input id="description" type="text" placeholder="e.g. Lunch with team" required />
+          </label>
+          <div class="row">
+            <label>Amount
+              <input id="amount" type="number" min="0.01" step="0.01" placeholder="0.00" required />
+            </label>
+            <label>Currency
+              <select id="currency"></select>
+            </label>
+          </div>
+          <label>Category
+            <select id="category"></select>
+          </label>
+          <p class="form-error" id="form-error" role="alert"></p>
+          <button type="submit" class="btn">Add expense</button>
         </form>
-
-    </section>
+      </section>
 
 
     <section class="filter-section">
