@@ -33,6 +33,9 @@ ledger/
 ├── style.css
 └── README.md
 ```
+## View The Live Website Here
+
+im-jaz.github.io/Ledger/
 
 ## Getting Started
 
@@ -45,7 +48,7 @@ You need a modern web browser like Chrome and a code editor to view or modify th
 1. Clone the repository:
 
    ```bash
-   git clone (https://im-jaz.github.io/Ledger/)
+   git clone git@github.com:im-jaz/Ledger.git
    ```
 
 2. Navigate to the project directory:
