@@ -86,5 +86,5 @@ This project is licensed under the MIT license.
 
 ## Authors
 
-Jazmine Amunga
+Jazmine Amunga,
 Collins Korir (ghost writer)
