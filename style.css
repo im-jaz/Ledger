@@ -1,45 +1,61 @@
-:root{
-    --bg:#F8F6F2;
-    --card:#FFFFFF;
-    --text:#2E2A26;
-    --muted:#8A817C;
-    --accent:#C7B8A3;
-    --border:#ECE6DD;
-    --danger:#C97C7C;
+:root {
+    --bg: #f4f1ec;
+    --surface: #fbfaf7;
+    --ink: #2b2825;
+    --muted: #8a837a;
+    --line: #e2ddd5;
+    --accent: #6b5e51;
+    --danger: #a4553f;
+    --radius: 14px;
+}
+* {
+    box-sizing: border-box;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Inter',sans-serif;
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Manrope", system-ui, sans-serif;
+    line-height: 1.5;
 }
 
-body{
-    background:var(--bg);
-    color:var(--text);
+.wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
-.container{
-    width:min(1100px,90%);
-    margin:auto;
-    padding:40px 0;
+.site-header {
+    border-bottom: 1px solid var(--line);
 }
 
-.header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:30px;
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 16px;
 }
 
-.header h1{
-    font-size:2.5rem;
-    margin-bottom:8px;
+.logo {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin: 0;
 }
 
-.header p{
-    color:var(--muted);
+.logo span {
+    color: var(--muted);
+}
+
+.home-currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    color: var(--muted);
 }
 
 select,
@@ -54,7 +70,7 @@ button{
 button{
     cursor:pointer;
     border:none;
-    background:var(--text);
+    background:var(--primary);
     color:white;
 }
 
@@ -66,7 +82,7 @@ button{
 }
 
 .stat-card{
-    background:var(--card);
+    background:var(--secondary);
     padding:24px;
     border-radius:20px;
     box-shadow:0 10px 20px rgba(0,0,0,.04);

@@ -14,21 +14,15 @@
 </head>
 <body>
 
-    <div class="container">
-
-    <header class="header">
-        <div>
-            <h1>Expense Tracker</h1>
-            <p>Track and mange your spending.</p>
-        </div>
-
-        <select id="homeCurrency">
-            <option value="KES">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="USD">KES</option>
-        </select>
-    </header>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <h1 class="logo">Ledger<span>.</span></h1>
+      <label class="home-currency">
+        <span>Home currency</span>
+        <select id="home-currency" aria-label="Home currency"></select>
+      </label>
+    </div>
+  </header>
 
     <section class="stats">
 
@@ -109,6 +103,5 @@
 
     <section id="expenseList" class="expense-list"></section>
 
-    
 </body>
 </html>
