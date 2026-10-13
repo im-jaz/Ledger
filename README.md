@@ -45,7 +45,7 @@ You need a modern web browser like Chrome and a code editor to view or modify th
 1. Clone the repository:
 
    ```bash
-   git clone <[text](https://im-jaz.github.io/Ledger/)>
+   git clone (https://im-jaz.github.io/Ledger/)
    ```
 
 2. Navigate to the project directory:
